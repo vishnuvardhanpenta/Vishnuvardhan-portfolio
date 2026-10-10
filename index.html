@@ -119,3 +119,7 @@
 <script>
 (function(){var svg=document.querySelector('#insights .chart-wrap svg');if(svg){svg.setAttribute('aria-label','Generic illustrative chart with sample trends across four periods');Array.prototype.forEach.call(svg.querySelectorAll('text'),function(t,i){t.textContent=['PERIOD 1','PERIOD 2','PERIOD 3','SAMPLE'][i]||''});var caption=document.querySelector('#insights .chart-caption');if(caption)caption.textContent='Generic sample visualization; no profile or client data shown.'}})();
 </script>
+
+<script>
+setTimeout(function(){document.querySelectorAll('#insights .chart-wrap svg').forEach(function(svg){svg.setAttribute('aria-label','Generic illustrative chart with sample trends across four periods');var labels=svg.querySelectorAll('text');['PERIOD 1','PERIOD 2','PERIOD 3','PERIOD 4'].forEach(function(label,i){if(labels[i])labels[i].textContent=label})});document.querySelectorAll('#insights .chart-caption').forEach(function(caption){caption.textContent='Generic sample visualization; no profile or client data shown.'})},50);
+</script>
