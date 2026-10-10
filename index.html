@@ -123,3 +123,5 @@
 <script>
 setTimeout(function(){document.querySelectorAll('#insights .chart-wrap svg').forEach(function(svg){svg.setAttribute('aria-label','Generic illustrative chart with sample trends across four periods');var labels=svg.querySelectorAll('text');['PERIOD 1','PERIOD 2','PERIOD 3','PERIOD 4'].forEach(function(label,i){if(labels[i])labels[i].textContent=label})});document.querySelectorAll('#insights .chart-caption').forEach(function(caption){caption.textContent='Generic sample visualization; no profile or client data shown.'})},50);
 </script>
+
+<script>(function(){var s=document.querySelector("#insights");if(!s)return;var x=s.querySelector(".extra-chart");if(x)x.remove();var g=s.querySelector(".chart-wrap svg");if(g){g.setAttribute("aria-label","Illustrative trend chart formats for sales, financial, and operations dashboards");g.querySelectorAll("text").forEach(function(t,i){t.textContent=["SALES","FINANCE","OPERATIONS","ILLUSTRATIVE"][i]||""})}var c=s.querySelector(".chart-caption");if(c)c.textContent="Example dashboard views; curves are illustrative and do not represent client data."})();</script>
